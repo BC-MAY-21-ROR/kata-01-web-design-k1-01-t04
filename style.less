@@ -1,22 +1,32 @@
 body{
+    margin: 0%;
     font-family: 'Open Sans', sans-serif;
-    padding: 10px 30px;
-    max-width: 360px;
-    margin-top: 30px;
+    min-width: 360px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .bloqueSuperior{
-    background-color: #1681a8;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    background-color: #EDFBFE;
+    background-image: url("./images/bg-hero-mobile.svg");
+    .flexCode()
+}
+
+.flexCode{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    width: 375px;
+    max-width: 375px;
 }
 
 .titulo{
+    text-align: center;
     font-size: 16px; 
     width:360px;
     font-weight: 700;
@@ -91,15 +101,21 @@ p{
 }
 
 .bloqueCentral{
+    .flexCode();
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 360px;
 }
 
 .imagenBloque{
     margin-top: 10px;
+}
+
+
+
+.imagen{
+    margin: 30px;
 }
 
 .imageStyle{
@@ -146,28 +162,65 @@ p{
     border-radius: 10px;
     height: 400px;
     margin-top: 15px;
+    margin-bottom: 30px;
 }
+
 #community{
     background-color: white;
-    height: 150px;
-    margin-top: 15px;
+    height: 100px;
+    margin-top: 70px;
+    margin-bottom: -110px;
 }
+
 .bloquePie {
+    .flexCode();
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
+    padding-top: 90px;
     background-color: hsl(192, 100%, 9%);
-    color: hsl(208, 11%, 55%);
+    color: white;
     #information {
         text-align: left;
         margin: 5px;
+        line-height: 30px;
+        font-size: 18px;
+        color: white;
+        
+
     }
     #imageHuddle {
-        filter: grayscale();
+        margin-top: 40px;
+        width: 150px;
+        margin-left: 7px;
+        margin-bottom: 8px;
     }
     .icon{
         padding: 10px;
     }
     #copyright {
         font-size: 10px;
+    }
+    .formatText {
+        text-align: left;
+        margin-left: 15px;
+        margin-top: -28px;
+        color: white;
+    }
+    #imageLocation {
+        #lorem {
+            .formatText();
+        }
+    }
+    #imagePhone {
+        #cel {
+            .formatText();
+        }
+    }
+    #imageMail {
+        #mail {
+            .formatText();
+        }
     }
 }
 
@@ -182,8 +235,16 @@ p{
 
 .redes:hover{
     filter: invert(30%);
+    
+}
+#botonTry:hover{
+    color: #868F96;
+    
 }
 
+.butonRosa:hover{
+    background-color:#FF9BDB;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
