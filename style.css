@@ -1,22 +1,152 @@
-body{
-    font-family: 'Spartan', sans-serif;
-    padding: 20px 50px;
-    max-width: 1312px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aqua;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.upper{
-    display: flex;
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 30px;
+  max-width: 375px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
 }
-
-@media screen and (max-width: 375px) {
-    body{
-        background-color: red;
-    }
+.upper {
+  display: flex;
 }
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+body {
+  background-color: #e2e2e2;
+}
+header {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+header .logo {
+  line-height: 20px;
+  float: left;
+  padding: 3px 6px;
+}
+header nav {
+  float: right;
+}
+header nav a {
+  display: inline-block;
+  color: #060053;
+  padding: 5px 25px;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 35px;
+  text-align: center;
+  background-color: hsl(0, 0%, 87%);
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.603);
+}
+.centrar {
+  width: 100%;
+  max-width: 1312px;
+  margin: 0;
+  overflow: hidden;
+}
+h2 {
+  text-align: center;
+}
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: hsl(210, 11%, 56%);
+  text-align: center;
+  font-size: 15px;
+}
+.imageStyle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+}
+#imageMockup {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+}
+#imageGrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+}
+#imageFlowinf {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+}
+#imageUsers {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+}
+.buttonStart {
+  text-align: center;
+  line-height: normal;
+  border-radius: 35px;
+  width: 65%;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  padding: 15px;
+  font-weight: bold;
+  background-color: hsl(322, 100%, 66%);
+  text-decoration: none;
+  display: inline-flex;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.603);
+}
+.bloque {
+  background-color: white;
+  border-radius: 10px;
+  height: 400px;
+  margin-top: 15px;
+}
+#community {
+  background-color: white;
+  height: 150px;
+  margin-top: 15px;
+}
+.bloquePie {
+  padding: 20px;
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(208, 11%, 55%);
+}
+.bloquePie #information {
+  text-align: left;
+  margin: 5px;
+}
+.bloquePie #imageHuddle {
+  filter: grayscale();
+}
+.bloquePie .icon {
+  padding: 10px;
+}
+.bloquePie #copyright {
+  font-size: 10px;
+}
+.red {
+  text-align: center;
+}
+.red .redes {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 35px;
+}
+.redes:hover {
+  filter: invert(30%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
