@@ -25,6 +25,21 @@ body{
     max-width: 375px;
 }
 
+.botonTryStyle{
+    display:inline-block;
+    color:rgb(6, 0, 83);
+    text-decoration: none;
+    padding: 5px 25px;
+    line-height: normal;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 35px;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.137);
+}
+
 .titulo{
     text-align: center;
     font-size: 16px; 
@@ -44,20 +59,9 @@ header{
     }
     nav{
         float:right;
-        margin-right: 7%;
+        margin-right: 5%;
         a{
-            display:inline-block;
-            color:rgb(6, 0, 83);
-            text-decoration: none;
-            padding: 5px 25px;
-            line-height: normal;
-            font-size: 12px;
-            font-weight: bold;
-            border-radius: 35px;
-            text-align: center;
-            background-color: hsl(0, 0%, 100%);
-            text-decoration: none;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.137);
+            .botonTryStyle
         }
     }
 }
@@ -108,17 +112,12 @@ p{
     margin-top: 10px;
 }
 
-.imagenBloque{
-    margin-top: 10px;
-}
-
-
-
 .imagen{
     margin: 30px;
 }
 
 .imageStyle{
+    margin-top: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -180,15 +179,6 @@ p{
     padding-top: 90px;
     background-color: hsl(192, 100%, 9%);
     color: white;
-    #information {
-        text-align: left;
-        margin: 5px;
-        line-height: 30px;
-        font-size: 18px;
-        color: white;
-        
-
-    }
     #imageHuddle {
         margin-top: 40px;
         width: 150px;
@@ -237,7 +227,7 @@ p{
     filter: invert(30%);
     
 }
-#botonTry:hover{
+.botonTry:hover{
     color: #868F96;
     
 }
@@ -248,3 +238,140 @@ p{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 376px){
+
+    body {
+        min-width: 1280px;
+    }
+
+    .bloqueSuperior{
+        background-image: url("./images/bg-hero-desktop.svg");
+        .flexCode()
+    }
+    
+    .flexCode{
+        width: 1280px;
+        max-width: 1280px;
+    }
+    
+    .titulo{
+        font-size: 25px; 
+        width:390px;
+        font-weight: 700;
+        flex-basis: 100%;
+        padding-top: 150px;
+    }
+
+    h2{
+        text-align: left;
+    }
+    
+  
+    .imagen{
+        margin-left: 500px;
+        margin-top: -400px;
+        #imageMockup{
+            height: 500px;
+            width: 700px;
+        }
+    }
+    
+    header{
+        width: 100%;
+        overflow:hidden;
+        padding:10px;
+        .logo{
+            line-height: 20px;
+            float:left;
+            padding: 3px 6px;
+        }
+        nav{
+            a{
+                display:inline-block;
+                line-height: normal;
+                font-size: 13px;
+                font-weight: bold;
+                border-radius: 35px;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .centrar{
+        width: 100%;
+        max-width: 1440px;
+    }
+    
+    .texto{
+        font-size: 15px; 
+        text-align: left;
+    }
+
+    .centrarBotonExterno {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .bloque{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow:hidden;
+    }
+    
+    .imagenBloque{
+        line-height: 20px;
+        float:left;
+        padding: 3px 6px;
+    }
+
+    .textoBloque{
+        
+    }
+
+    .bloqueCentral{
+        .flexCode();
+    }
+
+    .imageStyle{
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    
+    #imageGrow{
+        .imageStyle();
+        float:right;
+    }
+    #imageFlowinf{
+        .imageStyle();
+        float: left;
+    }
+    #imageUsers{
+        .imageStyle();
+        float: right;
+    }
+    
+    
+
+    .bloquePie{
+        float: center;
+        .lista1{
+            width: 430px;
+        }
+        .somosNosotros{
+        }
+        .flexCode();
+    }
+    
+    .red{
+        text-align: right;
+        margin-right: 50px;
+    }
+    
+    
+}

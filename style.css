@@ -26,6 +26,19 @@ body {
   width: 375px;
   max-width: 375px;
 }
+.botonTryStyle {
+  display: inline-block;
+  color: #060053;
+  padding: 5px 25px;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 35px;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.137);
+}
 .titulo {
   text-align: center;
   font-size: 16px;
@@ -45,7 +58,7 @@ header .logo {
 }
 header nav {
   float: right;
-  margin-right: 7%;
+  margin-right: 5%;
 }
 header nav a {
   display: inline-block;
@@ -104,37 +117,39 @@ p {
   margin-right: auto;
   margin-top: 10px;
 }
-.imagenBloque {
-  margin-top: 10px;
-}
 .imagen {
   margin: 30px;
 }
 .imageStyle {
+  margin-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 260px;
 }
 #imageMockup {
+  margin-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 260px;
 }
 #imageGrow {
+  margin-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 260px;
 }
 #imageFlowinf {
+  margin-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 260px;
 }
 #imageUsers {
+  margin-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -196,13 +211,6 @@ p {
   background-color: hsl(192, 100%, 9%);
   color: white;
 }
-.bloquePie #information {
-  text-align: left;
-  margin: 5px;
-  line-height: 30px;
-  font-size: 18px;
-  color: white;
-}
 .bloquePie #imageHuddle {
   margin-top: 40px;
   width: 150px;
@@ -250,7 +258,7 @@ p {
 .redes:hover {
   filter: invert(30%);
 }
-#botonTry:hover {
+.botonTry:hover {
   color: #868F96;
 }
 .butonRosa:hover {
@@ -262,4 +270,125 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 376px) {
+  body {
+    min-width: 1280px;
+  }
+  .bloqueSuperior {
+    background-image: url("images/bg-hero-desktop.svg");
+    width: 1280px;
+    max-width: 1280px;
+  }
+  .flexCode {
+    width: 1280px;
+    max-width: 1280px;
+  }
+  .titulo {
+    font-size: 25px;
+    width: 390px;
+    font-weight: 700;
+    flex-basis: 100%;
+    padding-top: 150px;
+  }
+  h2 {
+    text-align: left;
+  }
+  .imagen {
+    margin-left: 500px;
+    margin-top: -400px;
+  }
+  .imagen #imageMockup {
+    height: 500px;
+    width: 700px;
+  }
+  header {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+  }
+  header .logo {
+    line-height: 20px;
+    float: left;
+    padding: 3px 6px;
+  }
+  header nav a {
+    display: inline-block;
+    line-height: normal;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .centrar {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .texto {
+    font-size: 15px;
+    text-align: left;
+  }
+  .centrarBotonExterno {
+    text-align: left;
+    margin-top: 15px;
+  }
+  .bloque {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .imagenBloque {
+    line-height: 20px;
+    float: left;
+    padding: 3px 6px;
+  }
+  .bloqueCentral {
+    width: 1280px;
+    max-width: 1280px;
+  }
+  .imageStyle {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+  #imageGrow {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    float: right;
+  }
+  #imageFlowinf {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    float: left;
+  }
+  #imageUsers {
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    float: right;
+  }
+  .bloquePie {
+    float: center;
+    width: 1280px;
+    max-width: 1280px;
+  }
+  .bloquePie .lista1 {
+    width: 430px;
+  }
+  .red {
+    text-align: right;
+    margin-right: 50px;
+  }
 }
