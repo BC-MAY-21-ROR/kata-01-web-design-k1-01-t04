@@ -1,13 +1,14 @@
 body {
-  margin: 0%;
+  padding: 5%;
   font-family: 'Open Sans', sans-serif;
   min-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #EDFBFE;
 }
 .bloqueSuperior {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   padding: 5%;
   background-color: #EDFBFE;
   background-image: url("images/bg-hero-mobile.svg");
@@ -116,6 +117,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  background-color: #ffffff;
 }
 .imagen {
   margin: 30px;
@@ -196,6 +198,7 @@ p {
   height: 100px;
   margin-top: 70px;
   margin-bottom: -110px;
+  font-size: 12px;
 }
 .bloquePie {
   display: flex;
@@ -273,7 +276,7 @@ p {
 }
 @media only screen and (min-width: 376px) {
   body {
-    min-width: 1280px;
+    min-width: 376px;
   }
   .bloqueSuperior {
     background-image: url("images/bg-hero-desktop.svg");
@@ -339,10 +342,35 @@ p {
     margin-right: auto;
     overflow: hidden;
   }
-  .imagenBloque {
+  .bloque .imagenBloque {
     line-height: 20px;
+  }
+  .bloque .textoDerecha {
+    float: right;
+    margin-right: 70px;
+    margin-top: 110px;
+  }
+  .bloque .textoIzquierda {
     float: left;
-    padding: 3px 6px;
+    margin-left: 70px;
+    margin-top: 110px;
+  }
+  .bloque .textoBloque {
+    width: 500px;
+  }
+  .bloque .imagenDerecha {
+    padding-right: 70px;
+  }
+  .bloque .imagenIzquierda {
+    padding-left: 70px;
+  }
+  #community {
+    width: 45%;
+    font-size: 15px;
+  }
+  #community h2 {
+    text-align: center;
+    font-weight: bold;
   }
   .bloqueCentral {
     width: 1280px;
@@ -380,12 +408,25 @@ p {
     float: right;
   }
   .bloquePie {
-    float: center;
-    width: 1280px;
-    max-width: 1280px;
+    width: 1319px;
+    max-width: 1440px;
+    padding-left: 7%;
   }
   .bloquePie .lista1 {
-    width: 430px;
+    width: 450px;
+  }
+  .bloquePie .sobreNosotros {
+    width: 350px;
+  }
+  .bloquePie .sobreNosotros .lista2 {
+    float: right;
+    margin-right: -280px;
+    margin-top: -190px;
+  }
+  .bloquePie .sobreNosotros .lista3 {
+    float: right;
+    margin-right: -460px;
+    margin-top: -190px;
   }
   .red {
     text-align: right;

@@ -1,15 +1,15 @@
 body{
-    margin: 0%;
+    padding: 5%;
     font-family: 'Open Sans', sans-serif;
     min-width: 360px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #EDFBFE;
 }
 
 .bloqueSuperior{
-    
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding: 5%;
     background-color: #EDFBFE;
     background-image: url("./images/bg-hero-mobile.svg");
@@ -110,11 +110,13 @@ p{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    background-color: #ffffff;
 }
 
 .imagen{
     margin: 30px;
 }
+
 
 .imageStyle{
     margin-top: 10px;
@@ -169,6 +171,7 @@ p{
     height: 100px;
     margin-top: 70px;
     margin-bottom: -110px;
+    font-size: 12px;
 }
 
 .bloquePie {
@@ -242,12 +245,12 @@ p{
 @media only screen and (min-width: 376px){
 
     body {
-        min-width: 1280px;
+        min-width: 376px;
     }
 
     .bloqueSuperior{
         background-image: url("./images/bg-hero-desktop.svg");
-        .flexCode()
+        .flexCode();
     }
     
     .flexCode{
@@ -319,18 +322,39 @@ p{
         margin-left: auto;
         margin-right: auto;
         overflow:hidden;
+        .imagenBloque{
+            line-height: 20px;
+        }
+        .textoDerecha{
+            float: right;
+            margin-right: 70px;
+            margin-top: 110px;
+        }
+        .textoIzquierda{
+            float: left;
+            margin-left: 70px;
+            margin-top: 110px;
+        }
+        .textoBloque{
+            width: 500px
+        }
+        .imagenDerecha{
+            padding-right: 70px; 
+        }
+        .imagenIzquierda{
+            padding-left: 70px;
+        }
+    }
+
+    #community{
+        width: 45%;
+        font-size: 15px;
+        h2{
+            text-align: center;
+            font-weight: bold;
+        }
     }
     
-    .imagenBloque{
-        line-height: 20px;
-        float:left;
-        padding: 3px 6px;
-    }
-
-    .textoBloque{
-        
-    }
-
     .bloqueCentral{
         .flexCode();
     }
@@ -356,18 +380,29 @@ p{
         float: right;
     }
     
-    
-
     .bloquePie{
-        float: center;
+        //.flexCode();
+        width: 1319px;
+        max-width: 1440px;
+        padding-left: 7%;
         .lista1{
-            width: 430px;
+            width: 450px;
         }
-        .somosNosotros{
+        .sobreNosotros{
+            width: 350px;
+            .lista2{
+                float: right;
+                margin-right: -280px;
+                margin-top: -190px;
+            }
+            .lista3{
+                float: right;
+                margin-right: -460px;
+                margin-top: -190px;
+            }
         }
-        .flexCode();
     }
-    
+
     .red{
         text-align: right;
         margin-right: 50px;
