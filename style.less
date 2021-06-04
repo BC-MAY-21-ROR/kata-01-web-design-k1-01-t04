@@ -238,11 +238,12 @@ p{
         margin-left: 15px;
         margin-right: 15px;
         height: 35px; 
+        filter: invert(100%);
     }
 }
 
 .redes:hover{
-    filter: invert(30%);
+    filter: invert(53%) sepia(92%) saturate(2971%) hue-rotate(293deg) brightness(101%) contrast(99%);
     
 }
 .botonTry:hover{
@@ -411,32 +412,35 @@ p{
     }
     
     .bloquePie{
-        //.flexCode();
         width: 1319px;
         max-width: 1440px;
         padding-left: 7%;
+        flex-direction: row;
+        flex-wrap: wrap;
         .lista1{
-            width: 450px;
+            width: 420px;
         }
-        .sobreNosotros{
+        .lista2{
+            width: 200px;
+            margin-top: 60px;
+        }
+        .lista3{
+            width: 200px;
+            margin-top: 60px;
+        }
+        .red{
             width: 350px;
-            .lista2{
-                float: right;
-                margin-right: -280px;
-                margin-top: -190px;
-            }
-            .lista3{
-                float: right;
-                margin-right: -460px;
-                margin-top: -190px;
-            }
+            margin-top: 70px;
         }
+        .copyright{
+            width: 300px;
+        }
+
     }
 
-    .red{
-        text-align: right;
-        margin-right: 50px;
+    li{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
-    
-    
 }
