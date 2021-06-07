@@ -78,3 +78,4 @@ https://bc-may-21-ror.github.io/kata-01-web-design-k1-01-t04/
 - [How to Write Mobie First CSS](https://zellwk.com/blog/how-to-write-mobile-first-css/)
 - [Responsive Web Design Fundamentals](https://classroom.udacity.com/courses/ud893)
 - [Creating a Mobile-First Responsive Web Design](https://www.html5rocks.com/en/mobile/responsivedesign/)
+end
